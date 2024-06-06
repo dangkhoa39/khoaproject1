@@ -1,0 +1,71 @@
+@use "sass:map";
+@import "theme";
+@import"responsive";
+
+
+html,
+body {
+    margin: 0;
+}
+* {
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin:auto;
+    //display: flex;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6{
+   // background-color: red;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-lg-3{
+    background-color: lightgray;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-lg-4{
+    background-color: red;
+    flex: 0 0 25%;
+    max-width: 25%;
+   // display: flex;
+}
+@include Responsive($DESKTOP){
+    .col-xl-3{
+        flex: 0 0 25%;
+        max-width: 25%;
+        background: #333;
+       // display: none;
+    }
+    .col-xl-6{
+        flex: 25% 0 25% ;
+        max-width:100%;
+        width: 75%;
+        background: snow;
+    }
+}
+
+@include Responsive($MEDIUM_DEVICE){
+    .col-lg-3{
+        flex: 0 0 100%;
+        max-width: 100%;
+        background: violet;
+    }
+}
+
+@include Responsive($SMALL_DEVICE){
+    
+}

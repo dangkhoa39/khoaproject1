@@ -1,0 +1,306 @@
+@use "sass:map";
+@import "style/pages/theme";
+$logoImg: "/assets/users/images/hero/logo.png";
+$bannerImg: "/assets/users/images/hero/thns.png";
+$bannerImg1: "/assets/users/images/hero/banner_right_1.png";
+$bannerImg2: "/assets/users/images/hero/banner_right_2.png";
+$bannerImg3: "/assets/users/images/hero/banner_right_3.png";
+$bannerImg4: "/assets/users/images/hero/banner_right_4.png";
+$bannerImg5: "/assets/users/images/hero/banner_right_5.png";
+.header_top{
+    background: #f5f5f5;
+    //background: red;
+    .container{
+        border-radius: 5% 25% 25% 5%;
+    }
+}
+.header_top_right{
+   background: whitesmoke;
+  // display: grid;
+   justify-content: flex-end;
+   padding: 50px 0px 50px;
+   display: flex;
+    ul{
+        display: flex;
+        column-gap: 5px;
+        list-style: none;
+        a{
+            font-size: 14px;
+            display: inline-block;
+            color: map.get($theme-colors,"normal-text");
+        }
+        li:last-child{
+            cursor: pointer;
+            margin-left: 10px;
+            span{
+                font-size: 20px;
+                margin: left 2px; 
+            }
+        }
+    }
+}
+.header_cart{
+    display: flex;  
+    margin-right: 30px;
+    li{
+        list-style: none;
+        position: relative;
+        margin-left: 25px;
+        font-size: 20px;
+        svg{
+            font-size: 25px;
+            color: map.get($theme-colors,"normal-text");
+        }
+        span{
+            color: white;
+            //background: map.get($theme-colors,"main");
+            background-color: red;
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            font-size: 13px;
+            font-weight: 500; 
+            //left: 60px;
+            top: -2px;
+        }
+    }
+}
+
+.header_menu{
+    padding: 20px 0px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            position: relative;
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                color: map.get($theme-colors, "bold-text");
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+                transition: all 0.3s;
+                padding: 5px 0;
+                display: block;
+            }
+        }
+        li:hover .header_menu_dropdown{
+            opacity: 1;
+            visibility: visible;
+        }
+        // .active a{
+           // color: map.get($theme-colors,"normal-text");
+        //}
+        .header_menu_dropdown{
+            background: #f5f5f5;
+            display: block;
+            position: absolute;
+            width: 190px;
+            z-index: 9;
+            padding: 5px;
+            transition: all, 0.3s;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 5px;
+            li{
+                a{
+                    text-transform: capitalize;
+                    color: black;
+                    padding: 5px 15px;
+                }
+            }
+        }
+    }
+}
+
+.header_danhmucsp{
+    color: map.get($theme-colors, "bold-text");
+    font-weight: bold;
+    font-size: 19px;
+    padding-top: 25px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.header_top_left{
+    background: whitesmoke;
+    //display: grid;
+    justify-content: end;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    ul{
+        display: flex;
+        column-gap: 5px;
+        list-style: none;
+        width: 470px;
+        padding-left: 220px;
+        
+    }    
+
+    .hero_searchbar_container{
+        background-image: url($logoImg);
+        position: relative;
+        margin: 0 -250px;
+        
+        .hero_searchbar_form{
+           width: 600px;
+           height: 50px;
+           float: left;
+
+            form{
+                display: flex;
+                align-items: center;
+            }
+
+            input{
+                border: none;
+                height: 48px;
+                font-size: 16px;
+                color: red;
+                padding-left: 20px;
+                border: 1px solid #333;
+                width: 70%;
+
+                :focus{
+                    outline: none;
+                    border: none;
+                }
+            }
+            button{
+                font-size: 14px;
+                color: white;
+                font-weight: 800;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 16px 30px 17px;
+                background-color: red;
+                border: none;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.header_menus_center{
+    display: flex;
+    height: 505px;
+    .menus{
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        width: 253px;
+        display: flex;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 10px
+            li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: #333;
+                font-size: 15.6px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin-bottom: 100px;
+                transition: background-color 0.3s ease;
+            }
+            a:hover {
+                background-color: #eee;
+              }
+        }
+    }
+    
+    .menusgiua{
+        background-image: url($bannerImg); 
+        background-image: no-repeat;
+        background-size: cover;
+        width:  600px;
+        height: 380px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    .menusphai{
+        background-image: url($bannerImg1);
+        background-image: no-repeat;
+        background-size: cover;
+        width:  260px;
+        height: 160px;
+       // object-fit: cover;
+       //padding-left: 150px;
+        position: absolute; /* Di chuyển hình ảnh ra khỏi vị trí bình thường trong dòng chảy tài liệu */
+        top: 190px; /* Vị trí từ cạnh dưới */
+        right: 367px;
+        border: 1px solid #ccc;
+    }
+    .menusphai1{
+        background-image: url($bannerImg2);
+        background-image: no-repeat;
+        background-size: cover;
+        width:  260px;
+        height: 160px;
+       // object-fit: cover;
+       //padding-left: 150px;
+        position: absolute; /* Di chuyển hình ảnh ra khỏi vị trí bình thường trong dòng chảy tài liệu */
+        top: 381px; /* Vị trí từ cạnh dưới */
+        right: 367px;
+        border: 1px solid #ccc;
+    }
+    .menusphai2{
+        background-image: url($bannerImg3);
+        background-image: no-repeat;
+        background-size: cover;
+        width:  260px;
+        height: 120px;
+       // object-fit: cover;
+       //padding-left: 150px;
+        position: absolute; /* Di chuyển hình ảnh ra khỏi vị trí bình thường trong dòng chảy tài liệu */
+        top: 575px; /* Vị trí từ cạnh dưới */
+        right: 982px;
+        border: 1px solid #ccc;
+    }
+    .menusphai3{
+        background-image: url($bannerImg4);
+        background-image: no-repeat;
+        background-size: cover;
+        width:  260px;
+        height: 120px;
+       // object-fit: cover;
+       //padding-left: 150px;
+        position: absolute; /* Di chuyển hình ảnh ra khỏi vị trí bình thường trong dòng chảy tài liệu */
+        top: 575px; /* Vị trí từ cạnh dưới */
+        right: 675px;
+        border: 1px solid #ccc;
+    }
+    .menusphai4{
+        background-image: url($bannerImg5);
+        background-image: no-repeat;
+        background-size: cover;
+        width:  260px;
+        height: 120px;
+       // object-fit: cover;
+       //padding-left: 150px;
+        position: absolute; /* Di chuyển hình ảnh ra khỏi vị trí bình thường trong dòng chảy tài liệu */
+        top: 575px; /* Vị trí từ cạnh dưới */
+        right: 367px;
+        border: 1px solid #ccc;
+    }
+    
+}
+
+
+
+
+
+
+

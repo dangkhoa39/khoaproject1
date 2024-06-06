@@ -1,0 +1,170 @@
+@use "sass:map";
+@import "style/pages/theme";
+
+
+.footer{
+    background: lightgray;
+    padding-top: 70px;
+    padding-bottom: 0;
+    .footer_about{
+        margin-bottom: 30px;
+        .footer_about_logo{
+            margin-bottom: 15px;
+            display: inline-block;
+            //border-bottom: 5px solid red;
+            font-size: 22px;
+        }
+
+        ul li{
+            font-size: 16px;
+            color: map.get($theme-colors, "normal-text");
+            line-height: 36px;
+            list-style: none;
+        }
+        .red-bar {
+            width: 50%; /* Thanh màu đỏ dài 50% chiều rộng container */
+            background-color: red;
+            height: 5px; /* Chiều cao thanh màu đỏ */
+        }
+        
+    }
+    .footer_chinhs{
+        margin-bottom: 30px;
+        .footer_chinh_to{
+            margin-bottom: 15px;
+            display: inline-block;
+            font-size: 22px;
+        }
+        ul li{
+            font-size: 16px;
+            color: map.get($theme-colors, "normal-text");
+            line-height: 36px;
+            list-style: none;
+        }
+    }
+    .footer_chinhc{
+        margin-bottom: 30px;
+        .footer_chung_to{
+            margin-bottom: 15px;
+            display: inline-block;
+            font-size: 22px;
+        }
+        ul li{
+            font-size: 16px;
+            color: map.get($theme-colors, "normal-text");
+            line-height: 36px;
+            list-style: none;
+        }
+    }
+    .footer_thanhtoans{
+        margin-bottom: 30px;
+        font-size: 10px;
+        .footer_thanhtoans_to{
+            margin-bottom: 15px;
+            display: inline-block;
+            font-size: 22px;
+        }
+        ul li{
+            font-size: 16px;
+            color: map.get($theme-colors, "normal-text");
+            line-height: 36px;
+            list-style: none;
+        }
+    }
+    .footer_chamsoc{
+        margin-bottom: 30px;
+        .footer_chamsoc_to{
+            margin-bottom: 15px;
+            display: inline-block;
+            font-size: 22px;
+        }
+        ul li{
+            font-size: 16px;
+            color: map.get($theme-colors, "normal-text");
+            line-height: 36px;
+            list-style: none;
+        }
+    }
+    .footer_icon{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        div{
+            margin-right: 5px;
+            font-size: 25px;
+        }
+    }
+
+    .footer_policy{
+        margin-bottom: 30px;
+        .footer_about_policy{
+            margin-bottom: 15px;
+            display: inline-block;
+            //border-bottom: 5px solid red;
+            font-size: 22px;
+        }
+
+        ul li{
+            font-size: 16px;
+            color: map.get($theme-colors, "normal-text");
+            line-height: 36px;
+            list-style: none;
+        }
+        .red-bar {
+            width: 50%; /* Thanh màu đỏ dài 50% chiều rộng container */
+            background-color: red;
+            height: 5px; /* Chiều cao thanh màu đỏ */
+        }
+          
+    }
+
+    .footer_deals{
+        margin-bottom: 30px;
+
+        .footer_about_deals{
+            margin-bottom: 15px;
+            display: inline-block;
+            //border-bottom: 5px solid red;
+            //border-bottom: ;
+            font-size: 22px;
+        }
+
+        ul li{
+            font-size: 16px;
+            color: map.get($theme-colors, "normal-text");
+            line-height: 36px;
+            list-style: none;
+        }
+        .red-bar {
+            width: 50%; /* Thanh màu đỏ dài 50% chiều rộng container */
+            background-color: red;
+            height: 5px; /* Chiều cao thanh màu đỏ */
+        }
+        
+    }
+
+    .footer_customers{
+        margin-bottom: 30px;
+
+        .footer_about_customers{
+            margin-bottom: 15px;
+            display: inline-block;
+            //border-bottom: 5px solid red;
+            //border-bottom: ;
+            font-size: 22px;
+        }
+
+        ul li{
+            font-size: 16px;
+            color: map.get($theme-colors, "normal-text");
+            line-height: 36px;
+            list-style: none;
+        }
+        .red-bar {
+            width: 50%; /* Thanh màu đỏ dài 50% chiều rộng container */
+            background-color: red;
+            height: 5px; /* Chiều cao thanh màu đỏ */
+        }
+        
+    }
+}
